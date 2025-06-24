@@ -41,6 +41,7 @@ app.post("/api/bouquets", async (c) => {
     return c.text("Gagal menambahkan bouquet: " + err.message, 500);
   }
 });
+// end tambah bouquet
 
 // PUT /api/bouquets/:id → Update data bouquet
 app.put("/api/bouquets/:id", async (c) => {
