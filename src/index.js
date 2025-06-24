@@ -3,7 +3,7 @@ import { cors } from "hono/cors";
 
 const app = new Hono();
 
-// Middleware CORS agar bisa diakses dari frontend (Vue.js)
+// Middleware CORS agar bisa diakses dari frontend
 app.use(
   "/api/*",
   cors({
@@ -12,6 +12,7 @@ app.use(
     allowHeaders: ["Content-Type"],
   })
 );
+//end middleware
 
 // Endpoint test
 app.get("/api", (c) => c.text("API Bouquet aktif"));
