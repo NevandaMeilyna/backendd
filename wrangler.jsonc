@@ -5,11 +5,17 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "backend-saya",
-	"main": "src/index.ts",
+	"main": "src/index.js",
 	"compatibility_date": "2025-06-20",
 	"observability": {
 		"enabled": true
-	}
+	}, "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bouquet-db",
+      "database_id": "02620ddf-dc6b-4308-b2b0-6accac5e1a47"
+    }
+  ]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
