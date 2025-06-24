@@ -70,6 +70,7 @@ app.delete("/api/bouquets/:id", async (c) => {
     return c.text("Gagal menghapus bouquet: " + err.message, 500);
   }
 });
+//end hapus data
 
 // Handler static file (opsional)
 app.get("*", (c) => c.env.ASSETS?.fetch(c.req.raw) ?? c.text("Not Found", 404));
