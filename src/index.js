@@ -57,6 +57,7 @@ app.put("/api/bouquets/:id", async (c) => {
     return c.text("Gagal mengupdate bouquet: " + err.message, 500);
   }
 });
+//end update data
 
 // DELETE /api/bouquets/:id → Hapus bouquet berdasarkan ID
 app.delete("/api/bouquets/:id", async (c) => {
