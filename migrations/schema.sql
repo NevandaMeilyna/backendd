@@ -5,3 +5,4 @@ CREATE TABLE bouquets (
   price REAL
 );
 
+-- membuat folder migrasi untuk ke db
