@@ -17,7 +17,7 @@ app.use(
 // Endpoint test
 app.get("/api", (c) => c.text("API Bouquet aktif"));
 
-// GET /api/bouquets → Ambil semua bouquet
+// GET /api/bouquets → Ambil semua data bouquet
 app.get("/api/bouquets", async (c) => {
   try {
     const { results } = await c.env.DB.prepare("SELECT * FROM bouquets").all();
@@ -26,6 +26,7 @@ app.get("/api/bouquets", async (c) => {
     return c.text("Gagal mengambil data bouquet: " + err.message, 500);
   }
 });
+//end ambil data bouquet
 
 // POST /api/bouquets → Tambah bouquet baru
 app.post("/api/bouquets", async (c) => {
