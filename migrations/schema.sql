@@ -4,3 +4,4 @@ CREATE TABLE bouquets (
   description TEXT,
   price REAL
 );
+

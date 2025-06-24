@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "bouquet-db",
-      "database_id": "02620ddf-dc6b-4308-b2b0-6accac5e1a47"
+      "database_id": "02620ddf-dc6b-4308-b2b0-6accac5e1a47" //konfigurasi untuk db
     }
   ]
 	/**
